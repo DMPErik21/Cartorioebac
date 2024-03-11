@@ -120,6 +120,7 @@ int main()
     printf("\t1 - registrar alunos\n");
     printf("\t2 - deletar alunos\n");
     printf("\t3 - consultar alunos\n\n");
+    printf("\t4 - sair do sistema\n\n");
     printf("opção: ");//fim do menu
     
     scanf("%d", &opcao); //Amazenando a escolha do usuário     
@@ -138,6 +139,11 @@ int main()
 	    
 	    case 3:
 	    consultar();//Chamada de funções Consultar
+        break;
+        
+        case 4:
+        printf("Obrigado por utilizar o sistema!");
+        return 0;
         break;
         
         default:
